@@ -1,5 +1,6 @@
 import { Poppins, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -22,6 +23,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="19f53f8e-9713-45c1-9df3-672a339ded8a"
+          strategy="afterInteractive"
+          defer
+        />
       <body className={`${poppins.variable} ${robotoMono.variable} antialiased`}>
         {children}
       </body>
