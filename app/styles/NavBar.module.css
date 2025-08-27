@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.upperDiv {
+    background-color: #202124;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.navbarLogo span {
+    color: white;
+}
+
+.navbarLogo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.logoText {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.navbarContent {
+    max-width: 900px;
+}
+
+.navbarTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: var(--font-poppins);
+}
+
+.navbarSubtext {
+    font-size: 0.90rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #d0cdcd;
+    font-family: var(--font-roboto-mono);
+}
+
+.navbarActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.navBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background-color: #f8fafc;
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: var(--font-roboto-mono);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+}
+
+.navBtn:hover {
+    background-color: #00c497;
+    color:#f8fafc;
+}
+
+@media (max-width: 768px) {
+    .navbarTitle {
+        font-size: 1.2rem;
+    }
+
+    .navbarSubtext {
+        font-size: 0.85rem;
+    }
+
+    .navBtn {
+        flex: 1 1 calc(50% - 1rem);
+        justify-content: center;
+    }
+}
