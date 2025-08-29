@@ -23,12 +23,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="yszqlDoRKS6U1tdVLGVIIxKyWd52VER3wa9TD6S5Psw" />
+      </head>
       <Script
-          src="https://cloud.umami.is/script.js"
-          data-website-id="19f53f8e-9713-45c1-9df3-672a339ded8a"
-          strategy="afterInteractive"
-          defer
-        />
+        src="https://cloud.umami.is/script.js"
+        data-website-id="19f53f8e-9713-45c1-9df3-672a339ded8a"
+        strategy="afterInteractive"
+        defer
+      />
       <body className={`${poppins.variable} ${robotoMono.variable} antialiased`}>
         {children}
       </body>

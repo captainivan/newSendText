@@ -1,9 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
 .sendBody {
     background: #fff;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    width: 800px;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
@@ -110,6 +115,18 @@
     margin-right: 10px;
 }
 
+.adContainerThree{
+    display: none;
+}
+
+.adContainerFour{
+    display: none;
+}
+
+.bosscontainer{
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .sendBody {
         padding: 1.2rem;
@@ -123,5 +140,18 @@
     .sendButton {
         font-size: 0.9rem;
         padding: 0.8rem;
+    }
+
+    .adContainerThree{
+        display: block;
+    }
+    .adContainer{
+        display: none;
+    }
+    .adContainerTwo{
+        display: none;
+    }
+    .adContainerFour{
+        display: block;
     }
 }
